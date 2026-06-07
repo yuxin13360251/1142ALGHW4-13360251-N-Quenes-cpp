@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <cmath>
+#include <cstdlib>
 using namespace std;
 
 vector<int> c;
@@ -39,7 +40,9 @@ void printSolution(const vector<int>& sol) {
     cout << "[";
     for (int i = 1; i < (int)sol.size(); i++) {
         cout << sol[i];
-        if (i != (int)sol.size() - 1) cout << ", ";
+        if (i != (int)sol.size() - 1) {
+            cout << ", ";
+        }
     }
     cout << "]";
 }
